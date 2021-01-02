@@ -1,0 +1,139 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+li{
+    padding: 0px 14px 0px 14px;
+}
+a, a:hover{
+    color: black;
+    font-size: 12px;
+}
+button{
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-radius: 4px;
+    color: rgba(34, 29, 29, 0.582);
+    background-color: rgba(218, 216, 216, 0.137);
+}
+button:focus,button:hover{
+    border: solid  rgba(161, 159, 159, 0.699) 1px;
+    color: rgba(3, 3, 3, 0.904);
+}
+.no-border,.no-border:hover,.no-border:focus{
+    border: none;
+    outline: none;
+}
+.space-between{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+/*Header*/
+.header-items{
+    position: absolute;
+    right: 0%;
+    margin: 1rem;
+    font-size: 10px;
+}
+.app-icon svg{
+    width: 16px;
+    fill: rgba(90, 88, 88, 0.877);
+}
+.app-icon svg:hover{
+    fill: black;
+}
+.app-btn,.app-btn:focus,.app-btn:hover{
+    padding: 0%;
+    background-color: white;
+}
+.signin-btn{
+    font-size: 13px;
+    font-weight: 900;
+    padding: 0.35rem 0.75rem 0.35rem 0.75rem;
+    border-radius: 4px;
+}
+
+
+/*Body*/
+.centered{
+    position: fixed;
+    top: 320px;
+    left: 50%;
+    transform: translate(-50%,-210%);
+}
+.image-style{
+    margin-top: 40px;
+}
+.form-style{
+    transform: translate(-50%,-80%);
+    width: 560px;
+    border-radius: 24px;
+    height: 48px;
+    align-items: center;
+}
+.form-style:hover{
+    box-shadow: 1px 1px 4px 0px rgba(155, 155, 155, 0.2),-1px -1px 4px 1px rgba(155, 155, 155, 0.2);
+}
+.form-input,.form-input:focus, .form-input:hover {
+    width: 480px;
+    padding: 2px;   
+    border: none;
+    outline: none;
+}
+.mic-icon svg{
+    color: blue;
+    width: 16px;
+    height: 18px;
+}
+.search-icon svg{
+    width: 14px;
+    height: 14px;
+    color: rgba(95, 95, 95, 0.712);
+}
+.btns{
+    margin-top: 120px;
+}
+
+/*footer*/
+.footer{
+    position: absolute;
+    bottom: 0%;
+    background-color: rgba(199, 195, 195, 0.24);
+    width: 100%;
+    border-top: rgba(226, 224, 224, 0.63) 1px solid;
+}
+.footer-ul,.header-link{
+    
+    margin: 0.5rem;
+}
+.footer a{
+    font-size: 14px;
+    color: gray;
+}
+@media (max-width:670px){
+    .form-style{
+        width: 75%;
+    }
+    .form-input,.form-input:hover,.form-input:focus{
+        width: 80%;
+    } 
+}
+@media (max-width:800px){
+    .footer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+@media (max-height:500px){
+    .footer-ul {
+        display: none;
+    }
+}
